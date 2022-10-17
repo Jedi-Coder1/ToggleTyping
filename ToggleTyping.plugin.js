@@ -33,13 +33,13 @@
 
 
 
-module.exports = class ForeverTyping {
+module.exports = class ToggleTyping {
     start() {
         const ToggleButton = this.ToggleButton = document.createElement("button");
-        ToggleButton.textContent = "Click To Start Typing";
+        ToggleButton.textContent = "Start Typing";
         ToggleButton.addEventListener("click", () => {
             window.alert("Hello World!");});
-        const root = document.getElementById("textbox");
+        const root = document.getElementById("listbox");
         root.append(ToggleButton);
     }
     stop() {
