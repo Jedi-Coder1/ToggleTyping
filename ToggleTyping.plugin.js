@@ -1,5 +1,5 @@
 /**
- * @name ForeverTyping
+ * @name ToggleTyping
  * @author JediMinecraft1
  * @version 0.0.1
  * @description This Plugin Is To Toggle The Typing Indicator Under The Chat Bar
@@ -39,7 +39,7 @@ module.exports = class ToggleTyping {
         ToggleButton.textContent = "Start Typing";
         ToggleButton.addEventListener("click", () => {
             window.alert("Hello World!");});
-        const root = document.getElementById("listbox");
+        const root = document.querySelector(".tree-3agP2X > div > div[Select emoji]");
         root.append(ToggleButton);
     }
     stop() {
