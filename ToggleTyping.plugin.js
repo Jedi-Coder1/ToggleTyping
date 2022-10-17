@@ -38,6 +38,7 @@ module.exports = class ToggleTyping {
         const ToggleButton = this.ToggleButton = document.createElement("button");
         ToggleButton.textContent = "Start Typing";
         ToggleButton.addEventListener("click", () => {
+            const url = `https://discord.com/api/v9/channels/${BdApi.Webpack.getModule(BdApi.Webpack.Filters.byProps("getLastSelectedChannelId"))}/typing`
             window.alert("Hello World!");});
         const root = document.querySelector(".tree-3agP2X > div > div[Select emoji]");
         root.append(ToggleButton);
